@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            http-equiv="cache-control"
+            content="no-cache, no-store, must-revalidate"
+        />
+        <meta http-equiv="expires" content="0" />
+        <meta http-equiv="pragma" content="no-cache" />
+
+        <title>MUSEOS</title>
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:ital,wght@0,500;1,500&family=Ubuntu:wght@500&display=swap"
+            rel="stylesheet"
+        /> -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+    </head>
+    <body>
+        <main style="height: 1050px">
+            <header class="header">
+                <div class="content">
+                    <div class="navbar">
+                        <div class="logo">
+                            <img src="./assets/img/logo.svg" alt="" />
+                            <img src="./assets/img/museos.svg" alt="" />
+                        </div>
+                        <ul class="action-button">
+                            <li>
+                                <a href="#!">
+                                    <div class="noti-wrapper">
+                                        <img
+                                            src="./assets/img/noti.svg"
+                                            alt=""
+                                        />
+                                        <div class="noti-num">1</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">home</a>
+                            </li>
+                            <li>
+                                <a href="../frontend/Pages/Details/details.html"
+                                    >library</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#!">upload</a>
+                            </li>
+                            <li>
+                                <a href="#!">settings</a>
+                            </li>
+                            <li>
+                                <input
+                                    id="songSearchInput"
+                                    type="text"
+                                    class="search-input"
+                                    placeholder="songs, genres, artists and more..."
+                                />
+                                <ul
+                                    id="autocompleteSuggestions"
+                                    class="autocomplete-suggestions"
+                                ></ul>
+                            </li>
+                        </ul>
+
+                        <div class="action">
+                            <a
+                                href="./Pages/Sign In/signin.html"
+                                class="action-link"
+                                >login</a
+                            >
+                            <a
+                                href="./Pages/Sign Up/signup.html"
+                                class="action-link"
+                                >sign up</a
+                            >
+                        </div>
+                    </div>
+                    <div class="big-logo">
+                        <img
+                            src="./assets/img/main.svg"
+                            alt=""
+                            class="main-logo"
+                        />
+                    </div>
+                </div>
+            </header>
+            <div class="list-top">
+                <div class="songs">
+                    <div class="song-label">top songs</div>
+                    <ul class="list-songs">
+                        <li class="title">
+                            <img
+                                src="./assets/img/singer-1.jpg"
+                                alt=""
+                                class="song-img"
+                            />
+                            <div class="song-desc">
+                                <h3 class="sub-title">Song 1</h3>
+                                <p class="desc">by Artist 1</p>
+                            </div>
+                        </li>
+                        <li class="title">
+                            <img
+                                src="./assets/img/singer-2.jpg"
+                                alt=""
+                                class="song-img"
+                            />
+                            <div class="song-desc">
+                                <h3 class="sub-title">Song 2</h3>
+                                <p class="desc">by Artist 2</p>
+                            </div>
+                        </li>
+                        <li class="title">
+                            <img
+                                src="./assets/img/singer-3.jpg"
+                                alt=""
+                                class="song-img"
+                            />
+                            <div class="song-desc">
+                                <h3 class="sub-title">Song 3</h3>
+                                <p class="desc">by Artist 3</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="line-break"></div>
+                <div class="artists">
+                    <div class="artist-label">top artists</div>
+                    <ul class="list-artists">
+                        <li class="title">
+                            <img
+                                src="./assets/img/singer-1.jpg"
+                                alt=""
+                                class="artist-img"
+                            />
+                            <h3 class="sub-title">Artist 1</h3>
+                        </li>
+                        <li class="title">
+                            <img
+                                src="./assets/img/singer-2.jpg"
+                                alt=""
+                                class="artist-img"
+                            />
+                            <h3 class="sub-title">Artist 2</h3>
+                        </li>
+                        <li class="title">
+                            <img
+                                src="./assets/img/singer-3.jpg"
+                                alt=""
+                                class="artist-img"
+                            />
+                            <h3 class="sub-title">Artist 3</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="content">
+                    <div class="left-footer">
+                        <div class="logo">
+                            <img src="./assets/img/footer-icon.svg" alt="" />
+                            <div class="logo-text">museos</div>
+                        </div>
+                        <div class="copyright">
+                            Copyright © 2023 Faculty of Information Technology
+                            VNU-HCMUS. All rights reserved.
+                        </div>
+                    </div>
+                    <div class="right-footer">
+                        <a href="#!" class="terms-condition"
+                            >terms and conditions</a
+                        >
+                        <a href="#!" class="faq">FAQ</a>
+                        <a href="#!" class="contacts">contacts</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script>
+            let userName = "";
+            function logoutUser() {
+                // Remove user data from localStorage
+                localStorage.removeItem("userMongoId");
+                const userNamePlaceholder = document.querySelector(".action");
+                if (userNamePlaceholder) {
+                    userNamePlaceholder.textContent = "";
+                    userNamePlaceholder.innerHTML =
+                        '<a href="./Pages/Sign In/signin.html" class="action-link" >login</a><a href="./Pages/Sign Up/signup.html" class="action-link">sign up</a>';
+                }
+                // Redirect to the login page or any other desired page
+                window.location.href = "#"; // Replace with the actual URL
+            }
+            function getUser() {
+                if (userMongoId) {
+                    // Make a GET request to the getUserById API
+                    fetch(`http://localhost:3000/api/v1/users/${userMongoId}`)
+                        .then((response) => {
+                            if (response.ok) {
+                                return response.json();
+                            } else {
+                                throw new Error(
+                                    `HTTP error! Status: ${response.status}`
+                                );
+                            }
+                        })
+                        .then((data) => {
+                            // Handle the API response here (e.g., display user data)
+                            console.log(data);
+                            userName = data.name;
+                            avata_src = data.avatarPath;
+                            const userNamePlaceholder =
+                                document.querySelector(".action");
+                            console.log(userName);
+                            if (userNamePlaceholder) {
+                                userNamePlaceholder.innerHTML = "";
+                                userNamePlaceholder.innerHTML += `<img src="${avata_src}" class="avatar-img"/><a href="./Pages/Profile/profile.html" style="text-decoration: none; color: white;" class="action-link">${userName}</a><a href="#" id="logoutlink" class="action-link" onclick="logoutUser()">log out</a>`;
+                            }
+                            // Update the page with user data, such as name, total counts, etc.
+                            // You can update placeholders or elements with this data
+                        })
+                        .catch((error) => {
+                            // Handle any errors that occur during the API request
+                            console.error(error);
+                        });
+                } else {
+                    // Handle the case where userMongoId is not available in local storage
+                    console.error("MongoDB _id not found in local storage.");
+                }
+            }
+            const userMongoId = localStorage.getItem("userMongoId");
+            if (userMongoId) {
+                getUser();
+            }
+
+            document
+                .getElementById("songSearchInput")
+                .addEventListener("input", debounce(handleSearch, 500));
+
+            function handleSearch(event) {
+                const searchText = event.target.value;
+                if (!searchText) {
+                    return displaySuggestions([]);
+                }
+
+                fetch(
+                    `http://localhost:3000/api/v1/songs?titleLike=${encodeURIComponent(
+                        searchText
+                    )}&sorts=title&orders=1&limit=5`
+                )
+                    .then((response) => {
+                        if (!response.ok) {
+                            throw new Error("Network response was not ok");
+                        }
+                        return response.json();
+                    })
+                    .then((data) => displaySuggestions(data))
+                    .catch((error) => console.error("Fetching error:", error));
+            }
+
+            function displaySuggestions(songs) {
+                const suggestionsElement = document.getElementById(
+                    "autocompleteSuggestions"
+                );
+                suggestionsElement.innerHTML = "";
+                var inputSong = document.getElementById("songSearchInput");
+                if (songs.length === 0 && inputSong.value) {
+                    suggestionsElement.innerHTML =
+                        "<li class='autocomplete-suggestion'>No song found</li>";
+                } else {
+                    songs.forEach((song) => {
+                        const a_tag = document.createElement("a");
+                        a_tag.href = "../frontend/Pages/Details/details.html";
+                        a_tag.className = "search-link";
+                        const li = document.createElement("li");
+                        const img_element = document.createElement("img");
+                        img_element.className = "search-img";
+                        img_element.src = song.coverPath;
+                        li.appendChild(img_element);
+                        title_song = song.title.replace(/\.mp3$/, "");
+                        span_element = document.createElement("span");
+                        span_element.textContent = `${title_song} by ${song.artist.name}`;
+                        li.appendChild(span_element);
+                        li.className = "autocomplete-suggestion";
+                        li.id = song._id;
+                        li.addEventListener("click", () => {
+                            // Handle click on suggestion
+                            // E.g., fill the input with the selected song's title
+                            document.getElementById("songSearchInput").value =
+                                song.title;
+                        });
+                        a_tag.appendChild(li);
+                        suggestionsElement.appendChild(a_tag);
+                    });
+                }
+            }
+            const songLi = document.querySelectorAll(
+                ".autocomplete-suggestion"
+            );
+            songLi.forEach((title) => {
+                title.addEventListener("click", () => {
+                    // Get the song ID from the clicked song title (you may need to store the song ID in a data attribute)
+                    const songId = songLi.id;
+
+                    // Redirect the user to the song detail page with the song ID as a parameter
+                    window.location.href = `../frontend/Pages/Song/details.html?songId=${songId}`;
+                });
+            });
+
+            function debounce(func, delay) {
+                let debounceTimer;
+                return function () {
+                    const context = this,
+                        args = arguments;
+                    clearTimeout(debounceTimer);
+                    debounceTimer = setTimeout(
+                        () => func.apply(context, args),
+                        delay
+                    );
+                };
+            }
+        </script>
+    </body>
+</html>

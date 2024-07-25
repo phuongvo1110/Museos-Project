@@ -1,0 +1,893 @@
+*{
+    box-sizing: border-box;
+    font-family: 'iCiel Amerigraf';
+}
+html{
+    font-size: 62.5%;
+}
+body, table{
+    background: #000;
+    font-family: 'iCiel Amerigraf';
+    font-size: 1.6rem;
+}
+/* Navigation bar */
+.navbar{
+    display: flex;
+    padding: 40px 36px;
+}
+.navbar .logo{
+    display: flex;
+    margin-top: -15px;
+}
+.navbar ul{
+    display: flex;
+    margin-left: 250px;
+    gap: 56px;
+}
+.navbar ul a{
+    color: #FFF;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+    font-family: 'iCiel Amerigraf';
+}
+.navbar ul li:first-child{
+    position: relative;
+    top:-2px;
+}
+.navbar ul a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: white;
+    bottom: -10px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+.navbar ul a:has(img):before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: white;
+    bottom: -2px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+.noti-wrapper .noti-num{
+    font-size: 0.8rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+    background-color: red;
+    text-align: center;
+    border-radius: 3px;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: -3px;
+    left: 8px;
+}
+.navbar ul a:hover::before{  
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navbar .action-link::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: white;
+    top:22px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+.navbar .action-link:hover::before{  
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navbar .action-link{
+    color: #FFF;
+    font-weight: 400;
+    font-size: 1rem;
+    text-decoration: none;
+    position: relative;
+}
+.navbar .action{
+    margin-left: auto;
+    display: flex;
+    gap:30px;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+    align-items: center;
+}
+.navbar .search-input{
+    border-radius: 60px;
+    background: #D9D9D9;
+    padding: 11px 18px;
+    margin-top: -10px;
+}
+input[type="text"]{
+    font-family: 'iCiel Grandma';
+}
+.navbar .search-input::placeholder{
+    font-family: 'iCiel Grandma';
+}
+/* Logo */
+.big-logo{
+    display: flex;
+}
+.big-logo .main-logo{
+    margin: auto;
+}
+/* List song and artist */
+.list-top{
+    width: 917px;
+    height: 455px;
+    border-radius: 51px;
+    background: rgba(217, 217, 217, 0.25);
+    margin: 30px auto auto auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.list-top .sub-title{
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.list-top .song-label,.artist-label{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: normal;
+    background: black;
+    margin-top: -20px;
+    border-radius: 25px;
+    width: 140.9px;
+    height: 52.297px;
+    text-align: center;
+}
+.list-top .desc{
+    color: #FFF;
+    font-family: 'iCiel Grandma';
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.list-songs{
+    display: flex;
+    flex-direction: column;
+}
+.list-songs .title{
+    margin-top: 28px;
+    display: flex;
+    gap: 5px;
+}
+.list-songs .title:first-child{
+    margin-top: 42.12px;
+}
+.list-songs .title .song-img{
+    width: 71px;
+    height: 71px;
+    object-fit: cover;
+    margin-left: -90px;
+}
+.list-song .song .song-img{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+}
+.line-break{
+    width: 1px;
+    height: 455px;
+    background: #000;
+}
+.list-artists .title .artist-img{
+    width: 71px;
+    height: 71px;
+    object-fit: cover;
+    margin-left: -90px;
+}
+.list-artists .title:first-child{
+    margin-top: 42.12px;
+}
+.list-artists .title{
+    margin-top: 28px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.list-artists{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    position: fixed;
+    background: #D9D9D9;
+    height: 63px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.content .logo{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 36px;
+}
+.content .logo-text{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: normal;
+}
+.left-footer{
+    display: flex;
+}
+.left-footer .copyright{
+    color: #000;
+    font-family: 'iCiel Grandma';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 23px;
+    padding-left: 10px;
+}
+.footer .content{
+    display: flex;
+    justify-content: space-between;
+}
+.right-footer .terms-condition,.faq,.contacts{
+    color: #000;
+    font-family: 'iCiel Grandma';
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.right-footer .terms-condition:hover,.faq:hover,.contacts:hover{
+    text-decoration: underline;
+}
+.right-footer{
+    display: flex ;
+    gap: 40px;
+    margin-right: 30px;
+    padding-top: 23px;
+}
+/* ============ Songs ============== */
+.song-wrapper{
+    padding: 4px 36px 42px 36px;
+    margin-bottom: 42px;
+    display: flex;
+    gap: 22px;
+    flex-direction: row;
+}
+.song-cta{
+    border-radius: 80px;
+    background: rgba(217, 217, 217, 0.30);
+    width: 40%;
+    height: 115vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.song-cta .song-img{
+    border-radius: 80px;
+    height: 65%;
+    margin-top: 20px;
+    width: 90%;
+}
+.song-cta .song-name{
+    color: #FFF;
+    font-family: 'iCiel Grandma';
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 13px;
+    width: 95%;
+    text-align: center;
+}
+.song-cta .cta-wrapper{
+    display: flex;
+    width: 90%;
+    margin-top: 4px;
+}
+.song-artist .artist-name, .song-artist .featuring-name{
+    color: #FFF;
+    font-family: 'iCiel Grandma';
+    font-size: 28px;
+    font-weight: 600;
+}
+.song-cta .song-artist{
+    display: flex;
+}
+.song-cta .icon-cta{
+    margin-left: auto;
+    display: block;
+}
+.song-cta .icon-cta .icons{
+    display: flex;
+    gap: 33px;
+}
+/* ======== Track time========= */
+.track-time{
+    width: 85%;
+}
+.track {
+    padding-top: 28px;
+    position: relative;
+  }
+  
+  .track::before {
+  content: '';
+  height: 6px;
+  width: 100%;
+  display: block;
+  background: #D9D9D9;
+  opacity: 0.3;
+  border-radius: 10px;
+  position: absolute;
+  }
+  
+  .track::after { 
+    content: '';
+  height: 6px;
+  width: 85%;
+  display: block;
+  background: #D9D9D9;
+  border-radius: 10px;
+  }
+  .time {
+    opacity: 0.7;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 9.6px;
+  }
+  .time .total-time{
+    color: #FFF;
+    font-family: iCiel Grandma;
+    font-weight: 700;
+  }
+  .time .last-time{
+    color: #FFF;
+    font-family: iCiel Grandma;
+    font-weight: 700;
+  }
+  .song-action{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .song-center{
+    display: flex;
+    gap: 17px;
+    align-items: center;
+  }
+  .action-wrapper{
+    width: 90%;
+  }
+  .song-desc{
+    display: flex;
+    flex-direction: column;
+  }
+  .lyric-wrapper{
+    border-radius: 80px;
+    background: rgba(217, 217, 217, 0.30);
+    width: 60vw;
+    height: 115vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-wrapper{
+    display: flex;
+    margin-top: 25px;
+    gap: 15px;
+  }
+  .info-wrapper .song-info{
+    width: 35vw;
+    height: 26vh;
+    border-radius: 40px;
+    background: rgba(217, 217, 217, 0.30);
+    display: flex;
+  }
+  .info-wrapper .next-song{
+    width: 24vw;
+    height: 26vh;
+    border-radius: 40px;
+    background: rgba(217, 217, 217, 0.30);
+  }
+  .lyric-title{
+    color: #FFF;
+    font-family: 'iCiel Grandma';
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 26px;
+    margin-left: 57px;
+  }
+  .lyric{
+    color: rgba(255, 255, 255, 0.20);
+    font-family: iCiel Grandma;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 57px;
+    margin-right: 80px;
+    margin-top: 40px;
+  }
+  .lyric .singing-lyric{
+    color: #FFF;
+  }
+  .lyric .sang-lyric{
+    color: rgba(255, 255, 255, 0.20);
+  }
+  .lyric .next-lyric{
+    color: #000;
+  }
+  .song-info .follow{
+    width: 120px;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    font-weight: 500;
+    border: 2px solid;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-top: 10px;
+  }
+  .song-info .follow:hover{
+    color: #000;
+    background-color: #FFF;
+  }
+  .song-info .follow-cta{
+    margin-left: 28px;
+    margin-top: 11px;
+  }
+  .info-wrapper .info{
+    color: #FFF;
+    font-family: 'iCiel Grandma';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 140%; /* 21px */
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 14px;
+  }
+  .info .artist-title{
+    color: #FFF;
+    font-family: 'iCiel Grandma';
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .info .fb-link,.info .ig-link{
+    color: #FFF;
+    font-family: 'iCiel Grandma';
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    display: flex;
+  }
+  .info .fb-link span,.info .ig-link span{
+    margin-left: 5px;
+  }
+  .line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.next-song .sub-title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.next-song .sub-title span{
+    color: #FFF;
+    font-family: 'iCiel Amerigraf';
+    font-size: 30px;
+    font-weight: 400;
+}
+.next-song .sub-title .playlist-cta{
+    color: #FFF;
+    font-family: 'iCiel Grandma';
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.next-song-info{
+    margin-left: 25px;
+}
+.next-song-info .next-title {
+    color: #FFF;
+    font-family: 'iCiel Grandma';
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.next-song-info .artist-title-next{
+    color: #FFF;
+    font-family: 'iCiel Grandma';
+    font-size: 15px;
+    font-weight: 400;
+}
+.next-song .next-info{
+    display: flex;
+    align-items: center;
+    padding-left: 29px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.playpause-track{
+    cursor: pointer;
+}
+.seek_slider{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  .seek_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+ 
+/* Change the opacity when mouse is hovered */
+.seek_slider:hover {
+  opacity: 1.0;
+}
+ 
+.seek_slider {
+  width: 100%;
+}
+.next-song{
+    cursor: pointer;
+}
+.back-song{
+    cursor: pointer;
+}
+.avatar-img{
+    width: 30px;
+    border-radius: 15px;
+}
+.avatar-cover{
+    border-radius: 40px;
+    height: 45%;
+    width: 90%;
+    margin-top: 40px;
+}
+.username-title{
+    color: #FFF;
+    font-family: iCiel Amerigraf;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+a.list-cta{
+    margin-left: auto;
+    margin-top: 15px;
+}
+.song-cta .title{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    width: 90%;
+}
+.form-popup{
+    width: 775px;
+    height: 450px;
+    border-radius: 50px;
+    background: #303030;
+    position: fixed;
+    bottom: 200px;
+    left: 400px;
+    display: none;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+form .row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.change_avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 40px;
+}
+form .info{
+    display: flex;
+    flex-direction: column;
+}
+.form-popup #photo{
+    display: none;
+}
+.btn-area {
+    width: 100%;
+}
+.form-popup input{
+    border-radius: 70px;
+    background: rgba(188, 190, 192, 0.50);
+    width: 492px;
+    height: 50px;
+    outline: none;
+    border-width:0px;
+    border:none;
+    text-align: center;
+    color: #FFF;
+    font-family: iCiel Grandma;
+    font-size: 30px;
+    font-weight: 700;
+}
+.form-popup label{
+    color: #FFF;
+    font-family: iCiel Grandma;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.submit-area{
+    width: 100%;
+}
+.form-popup button[type="submit"]{
+    border-radius: 70px;
+    background: rgba(188, 190, 192, 0.50);
+    outline: none;
+    border-width:0px;
+    border:none;
+    color: #FFF;
+    text-align: center;
+    font-family: iCiel Grandma;
+    font-size: 20px;
+    font-weight: 700;
+    width: 80px;
+    height: 52px;
+    margin-left: auto;
+    display: block;
+    margin-right: 30px;
+}
+.cancel{
+    background-color: transparent;
+    color: #FFF;
+    font-family: iCiel Grandma;
+    font-size: 40px;
+    font-weight: 700;
+    outline: none;
+    border-width:0px;
+    border:none;
+    margin-left: auto;
+    display: block;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+/* ========= Uploading file=========== */
+.upload-title span,.fav-song .song-title span,.fav-artist .fav-title{
+    color: #FFF;
+    font-family: iCiel Grandma;
+    font-size: 30px;
+    font-weight: 700;
+}
+.upload-area{
+    color: #FFF;
+    font-family: iCiel Grandma;
+    font-size: 30px;
+    font-weight: 400;
+}
+.upload-area a{
+    text-decoration: underline;
+    color: #FFF;
+    font-family: iCiel Grandma;
+    font-size: 30px;
+    font-weight: 400;
+}
+.lyric-wrapper .more-action a{
+    color: #FFF;
+    font-family: iCiel Grandma;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.lyric-wrapper .more-action a:hover{
+    text-decoration: underline;
+}
+.playlist .playlist-info{
+    color: #FFF;
+    font-family: iCiel Grandma;
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.list-song .song-name{
+    color: #FFF;
+    font-family: iCiel Grandma;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.list-song .song-writer,.list-song .viewers, .list-song .time-section{
+    color: #FFF;
+    font-family: iCiel Grandma;
+    font-size: 15px;
+    font-weight: 400;
+}
+.list-song .song-writer{
+    margin-left: 10px;
+}
+.list-artist .artist-name{
+    color: #FFF;
+    font-family: iCiel Grandma;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.upload-title{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.upload-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 34px;
+}
+.upload-area{
+    margin-top: 53px;
+}
+.fav-song{
+    margin-top: 107px;
+    width: 90%;
+}
+.fav-song .song-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-song .playlist{
+    display: flex;
+    align-items: center;
+}
+.fav-song .list-song{
+    margin-top: 15px;
+}
+.list-song .song{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.song .info-section{
+    display: flex;
+    align-items: center;
+}
+.list-song li{
+    margin-bottom: 11px;
+}
+.fav-artist {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin-top: 42px;
+}
+.list-artist{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.artist-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.drag-action{
+    border-radius: 40px;
+    background: rgba(217, 217, 217, 0.30);
+    width: 100%;
+    height: 201.513px;
+    color: #FFF;
+    font-family: iCiel Grandma;
+    font-size: 48px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.drag-action a{
+    color: #FFF;
+    font-family: iCiel Grandma;
+    font-size: 48px;
+    font-weight: 400;
+}
+.upload-opener {
+    width: 90%;
+    margin-top: 22px;
+}
+.song-input {
+    width: 100%;
+    border-radius: 40px;
+    background: rgba(217, 217, 217, 0.30);
+    height: 131px;
+    outline: none;
+    border-width:0px;
+    border:none;
+}
+.song-input:focus{
+    outline: none;
+}
+.song-input::placeholder{
+    color: #FFF;
+    text-align: center;
+    font-family: iCiel Grandma;
+    font-size: 48px;
+    font-weight: 400;
+}
+.song-input[type="text"]{
+    color: #FFF;
+    text-align: center;
+    font-family: iCiel Grandma;
+    font-size: 48px;
+    font-weight: 400;
+}
+.upload-action{
+    border-radius: 20px;
+    background: rgba(188, 190, 192, 0.50);
+    border-width:0px;
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 218px;
+    height: 72px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: 45px;
+}
+.upload-action span{
+    color: #FFF;
+    font-family: iCiel Grandma;
+    font-size: 40px;
+    font-weight: 700;
+}
+.back-section{
+    margin-right: auto;
+    margin-left: 50px;
+    margin-top: 50px;
+}

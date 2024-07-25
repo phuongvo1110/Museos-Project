@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background: #000;
+    font-family: 'iCiel Amerigraf';
+    font-size: 1.6rem;
+}
+.navbar{
+    display: flex;
+    padding: 40px 36px;
+}
+.navbar .logo{
+    display: flex;
+    margin-top: -15px;
+}
+/* =======Common=========== */
+.btn{
+    border-radius: 25px;
+    background: #000;
+    border: none;
+    padding: 10px;
+}
+/* =======Login Section======== */
+.login-wrapper .title{
+    color: #FFF;
+    font-family: 'iCiel Amerigraf';
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 2;
+    width: 40%;
+    text-align: center;
+    align-self: center;
+    letter-spacing: 5px;
+}
+.login-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 87px;
+}
+.login-wrapper .login-section{
+    height: 110vh;
+    width: 45vw;
+    border-radius: 60px;
+    background: rgba(217, 217, 217, 0.30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-section .login-label{
+    color: #FFF;
+    font-size: 70px;
+    font-weight: 400;
+    font-family: 'iCiel Amerigraf';
+    border-radius: 50px;
+    background: #000;
+    text-align: center;
+    width: 230px;
+    height: 138px;
+    vertical-align: middle;
+    line-height: 138px;
+    margin-top: -70px;  
+}
+.login-section label{
+    color: #FFF;
+    font-family: 'iCiel Grandma';
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-bottom: 4px;
+}
+.other-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.other-login .other-link{
+    display: flex;
+    gap: 37px;
+    margin-top: 19px;
+}
+.other-login .other-label{
+    color: #FFF;
+    font-family: 'iCiel Grandma';
+    font-size: 25px;
+    font-weight: 400;
+}
+.signup-wrapper{
+    color: #FFF;
+    font-family: 'iCiel Grandma';
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 20px;
+    margin-top: 19px;
+}
+.signup-wrapper a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'iCiel Grandma';
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 20px;
+}
+.signup-wrapper a:hover{
+    text-decoration: underline;
+}
+.continue-cta{
+    color: #FFF;
+    text-align: center;
+    font-family: 'iCiel Grandma';
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 21px;
+    cursor: pointer;
+}
+.login-section .user-wrapper{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.login-section .password-wrapper{
+    margin-bottom: 15px;
+}
+.login-section .user-input,.password-input{
+    border-radius: 25px;
+    background: rgba(217, 217, 217, 0.20);
+    width: 40vw;
+    height: 80px;
+    border: none;
+    font-family: 'iCiel Grandma';
+    font-size: 26px;
+    color: #FFF;
+    font-weight: 400;
+}
+.login-section .row{
+    display: flex;
+    flex-direction: column;
+}
+.linebreak{
+    background: #FFF;
+    height: 1px;
+    width: 40rem;
+    margin-top: 45px;
+}
+.forgot-link{
+    align-self: flex-end;
+    color: #FFF;
+    font-family: iCiel Grandma;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+    margin-right: 28px;
+}
+.confirmation {
+    color: #FFF;
+    font-family: 'iCiel Grandma';
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center; 
+    line-height: normal;
+    width: 50%;
+    margin-top: 15px;
+}
+.confirmation a{
+    color: #FFF;
+    font-family: 'iCiel Grandma';
+    font-size: 20px;
+    font-weight: 400;
+}
+.login-section form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.error{
+    font-family: 'iCiel Grandma';
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    width: 40vw;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.inactive {
+    display: none;
+}

@@ -1,0 +1,463 @@
+/* @font-face {
+    font-family: 'iCiel Cucho';
+    src: url('iCielAmerigraf/iCielCucho-Bold.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielCucho-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Cucho';
+    src: url('iCielAmerigraf/iCielCucho-Ornament.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielCucho-Ornament.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bree Serif';
+    src: url('iCielAmerigraf/BreeSerif.woff2') format('woff2'),
+        url('iCielAmerigraf/BreeSerif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Cucho';
+    src: url('iCielAmerigraf/iCielCucho.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielCucho.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Gotham';
+    src: url('iCielAmerigraf/iCielGotham-Thin.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielGotham-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Gotham';
+    src: url('iCielAmerigraf/iCielGotham-Medium.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielGotham-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Altus Extra';
+    src: url('iCielAmerigraf/iCielAltusExtra.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielAltusExtra.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Altus Extra';
+    src: url('iCielAmerigraf/iCielAltusExtra.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielAltusExtra.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Alina';
+    src: url('iCielAmerigraf/iCielAlina.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielAlina.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Gotham Ultra';
+    src: url('iCielAmerigraf/iCielGotham-Ultra.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielGotham-Ultra.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Altus Serif';
+    src: url('iCielAmerigraf/iCielAltusSerif.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielAltusSerif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Altus';
+    src: url('iCielAmerigraf/iCielAltus.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielAltus.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Altus Serif';
+    src: url('iCielAmerigraf/iCielAltusSerif.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielAltusSerif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Altus';
+    src: url('iCielAmerigraf/iCielAltus.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielAltus.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Cadena';
+    src: url('iCielAmerigraf/iCielCadena.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielCadena.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Kermel';
+    src: url('iCielAmerigraf/iCielKermel.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielKermel.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Pacifico';
+    src: url('iCielAmerigraf/iCielPacifico.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielPacifico.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Finch Ornaments';
+    src: url('iCielAmerigraf/iCielFinchOrnaments.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielFinchOrnaments.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Finch Ornaments';
+    src: url('iCielAmerigraf/iCielFinchOrnaments.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielFinchOrnaments.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Kermel';
+    src: url('iCielAmerigraf/iCielKermel.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielKermel.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Pacifico';
+    src: url('iCielAmerigraf/iCielPacifico.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielPacifico.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Rukola';
+    src: url('iCielAmerigraf/iCielRukola.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielRukola.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Rukola';
+    src: url('iCielAmerigraf/iCielRukola.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielRukola.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Amerigraf';
+    src: url('iCielAmerigraf/iCielAmerigraf.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielAmerigraf.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Bambola';
+    src: url('iCielAmerigraf/iCielBambola.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielBambola.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Amerigraf';
+    src: url('iCielAmerigraf/iCielAmerigraf.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielAmerigraf.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Cadena';
+    src: url('iCielAmerigraf/iCielCadena.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielCadena.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Bambola';
+    src: url('iCielAmerigraf/iCielBambola.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielBambola.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Soup of Justice';
+    src: url('iCielAmerigraf/iCielSoupofJustice.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielSoupofJustice.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Paris Serif';
+    src: url('iCielAmerigraf/iCielParisSerif-Bold.woff2') format('woff2'),
+        url('iCielAmerigraf/iCielParisSerif-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+ */
+ /* iCiel Amerigraf */
+ @font-face {
+    font-family: 'iCiel Amerigraf';
+    src: url('iCiel Amerigraf/iCielAmerigraf.woff2') format('woff2'),
+        url('iCiel Amerigraf/iCielAmerigraf.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* Poppins */
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-BlackItalic.woff2') format('woff2'),
+        url('Poppins/Poppins-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Black.woff2') format('woff2'),
+        url('Poppins/Poppins-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Bold.woff2') format('woff2'),
+        url('Poppins/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-ExtraBoldItalic.woff2') format('woff2'),
+        url('Poppins/Poppins-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-ExtraLight.woff2') format('woff2'),
+        url('Poppins/Poppins-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-ExtraBold.woff2') format('woff2'),
+        url('Poppins/Poppins-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-BoldItalic.woff2') format('woff2'),
+        url('Poppins/Poppins-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-LightItalic.woff2') format('woff2'),
+        url('Poppins/Poppins-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Italic.woff2') format('woff2'),
+        url('Poppins/Poppins-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Light.woff2') format('woff2'),
+        url('Poppins/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-ExtraLightItalic.woff2') format('woff2'),
+        url('Poppins/Poppins-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Regular.woff2') format('woff2'),
+        url('Poppins/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-MediumItalic.woff2') format('woff2'),
+        url('Poppins/Poppins-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-SemiBoldItalic.woff2') format('woff2'),
+        url('Poppins/Poppins-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Medium.woff2') format('woff2'),
+        url('Poppins/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-SemiBold.woff2') format('woff2'),
+        url('Poppins/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Thin.woff2') format('woff2'),
+        url('Poppins/Poppins-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-ThinItalic.woff2') format('woff2'),
+        url('Poppins/Poppins-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+/* iCiel Grandma */
+@font-face {
+    font-family: 'iCiel Grandma';
+    src: url('iCielGrandma/iCielGrandma-Bold.woff2') format('woff2'),
+        url('iCielGrandma/iCielGrandma-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'iCiel Grandma';
+    src: url('iCielGrandma/iCielGrandma.woff2') format('woff2'),
+        url('iCielGrandma/iCielGrandma.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+

@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MUSEOS</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="../../assets/fonts/stylesheet.css" />
+        <link rel="stylesheet" href="../../assets/css/reset.css" />
+    </head>
+    <body>
+        <main style="height: 1050px">
+            <header class="header">
+                <div class="content">
+                    <div class="navbar">
+                        <div class="logo">
+                            <img src="../../assets/img/logo.svg" alt="" />
+                            <img src="../../assets/img/museos.svg" alt="" />
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#!">
+                                    <div class="noti-wrapper">
+                                        <img
+                                            src="../../assets/img/noti.svg"
+                                            alt=""
+                                        />
+                                        <div class="noti-num">1</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../index.html">home</a>
+                            </li>
+                            <li>
+                                <a href="#!">library</a>
+                            </li>
+                            <li>
+                                <a href="#">upload</a>
+                            </li>
+                            <li>
+                                <a href="#!">settings</a>
+                            </li>
+                            <li>
+                                <input
+                                    type="text"
+                                    class="search-input"
+                                    placeholder="songs, genres, artists and more..."
+                                />
+                            </li>
+                        </ul>
+
+                        <div class="action">
+                            <a href="../Sign In/signin.html" class="action-link"
+                                >login</a
+                            >
+                            <a href="../Sign Up/signup.html" class="action-link"
+                                >sign up</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="song-wrapper">
+                <div class="song-cta">
+                    <img
+                        src="../../assets/img/thumbnail-1.jpg"
+                        alt=""
+                        class="song-img"
+                    />
+                    <div class="song-name line-clamp">fwefwef</div>
+                    <div class="cta-wrapper">
+                        <div class="song-artist">
+                            <div class="artist-name">HIEUTHUHAI, marzuz</div>
+                        </div>
+                        <div class="icon-cta">
+                            <div class="icons">
+                                <div class="img-heart">
+                                    <a href="#"
+                                        ><img
+                                            src="../../assets/img/heart.svg"
+                                            alt=""
+                                            id="heart-unliked"
+                                    /></a>
+                                </div>
+                                <div class="img-down">
+                                    <a href="#"
+                                        ><img
+                                            src="../../assets/img/download.svg"
+                                            alt=""
+                                    /></a>
+                                </div>
+                                <div class="img-dot">
+                                    <a href="#"
+                                        ><img
+                                            src="../../assets/img/dot.svg"
+                                            alt=""
+                                    /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="track-time">
+                        <input
+                            type="range"
+                            min="1"
+                            max="100"
+                            value="0"
+                            class="seek_slider"
+                            onchange="seekTo()"
+                        />
+                        <div class="time">
+                            <div class="total-time">03:20</div>
+                            <div class="last-time">00:12</div>
+                        </div>
+                    </div>
+                    <div class="action-wrapper">
+                        <div class="song-action">
+                            <div class="random-song">
+                                <img
+                                    src="../../assets/img/random-ic.svg"
+                                    alt=""
+                                    class="random-ic"
+                                    onclick="playRandomClick()"
+                                />
+                            </div>
+                            <div class="song-center">
+                                <div class="back-song" onclick="prevTrack()">
+                                    <img
+                                        src="../../assets/img/back-ic.svg"
+                                        alt=""
+                                        class="back-ic"
+                                    />
+                                </div>
+                                <div
+                                    class="play-song playpause-track"
+                                    onclick="playpauseTrack()"
+                                >
+                                    <img
+                                        src="../../assets/img/play-circle.svg"
+                                        class="play-ic"
+                                        style="width: 60.68px; height: 60.929px"
+                                    />
+                                </div>
+                                <div class="next-song" onclick="nextTrack()">
+                                    <img
+                                        src="../../assets/img/next-ic.svg"
+                                        alt=""
+                                        class="next-ic"
+                                    />
+                                </div>
+                            </div>
+                            <div class="loop-song">
+                                <img
+                                    src="../../assets/img/loop-ic.svg"
+                                    alt=""
+                                    class="loop-ic"
+                                    onclick="playLoopClick()"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="song-desc">
+                    <div class="lyric-wrapper">
+                        <div class="lyric-title">Lyrics</div>
+                        <div class="lyric">
+                            <p class="singing-lyric">
+                                Lúc đó anh có xin lỗi hay không thì kết quả nó
+                                cũng như nhau mà
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-wrapper">
+                        <div class="song-info">
+                            <div class="follow-cta">
+                                <img
+                                    src="../../assets/img/thumbnail-1.jpg"
+                                    alt=""
+                                    class="song-img-info"
+                                    style="
+                                        width: 120px;
+                                        height: 120px;
+                                        border-radius: 20px;
+                                    "
+                                />
+                                <span class="follow">follow</a>
+                            </div>
+                            <div class="info">
+                                <div class="artist-title">HIEUTHUHAI</div>
+                                <div class="followers">735,229 followers</div>
+                                <div class="listeners">
+                                    962,316 monthly listeners
+                                </div>
+                                <a href="#" class="fb-link"
+                                    ><img
+                                        src="../../assets/img/fb-icon.svg"
+                                        alt=""
+                                        class="fb-ic"
+                                    /><span>facebook</span></a
+                                >
+                                <a href="#" class="ig-link"
+                                    ><img
+                                        src="../../assets/img/ig-icon.svg"
+                                        alt=""
+                                        class="ig-ic"
+                                    /><span>instagram</span></a
+                                >
+                            </div>
+                        </div>
+                        <div class="next-song">
+                            <div class="sub-title">
+                                <span>next song</span>
+                                <a href="#" class="playlist-cta"
+                                    >view playlist</a
+                                >
+                            </div>
+                            <div class="next-info">
+                                <img
+                                    src="../../assets/img/thumbnail-2.jpg"
+                                    alt=""
+                                    class="next-img"
+                                    style="
+                                        width: 80px;
+                                        height: 80px;
+                                        border-radius: 20px;
+                                    "
+                                />
+                                <div class="next-song-info">
+                                    <div class="next-title line-clamp">
+                                        no love no life
+                                    </div>
+                                    <div class="artist-title-next">
+                                        HIEUTHUHAI, marzuz
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="content">
+                    <div class="left-footer">
+                        <div class="logo">
+                            <img
+                                src="../../assets/img/footer-icon.svg"
+                                alt=""
+                            />
+                            <div class="logo-text">museos</div>
+                        </div>
+                        <div class="copyright">
+                            Copyright © 2023 Faculty of Information Technology
+                            VNU-HCMUS. All rights reserved.
+                        </div>
+                    </div>
+                    <div class="right-footer">
+                        <a href="#!" class="terms-condition"
+                            >terms and conditions</a
+                        >
+                        <a href="#!" class="faq">FAQ</a>
+                        <a href="#!" class="contacts">contacts</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+    <script>
+        let updateTimer;
+        let curr_time = document.querySelector(".total-time");
+        let total_duration = document.querySelector(".last-time");
+        let seek_slider = document.querySelector(".seek_slider");
+        let artist_name = document.querySelector(".artist-name");
+        let song_name = document.querySelector(".song-name");
+        let playpause_btn = document.querySelector(".playpause-track");
+        let curr_track = document.createElement("audio");
+        let cover_img = document.querySelector(".song-img");
+        let cover_img_info = document.querySelector(".song-img-info");
+        let artist_title = document.querySelector(".artist-title");
+        let next_title = document.querySelector(".next-title");
+        let artist_title_next = document.querySelector(".artist-title-next");
+        let next_img = document.querySelector(".next-img");
+        let singing_lyric = document.querySelector(".singing-lyric");
+        let isPlaying = false;
+        let temp_song;
+        let track_list;
+        let track_index = 0;
+        let next_btn = document.querySelector(".next-song");
+        let prev_btn = document.querySelector(".back-song");
+        let res;
+        let songMongoId = "";
+        let likedCheck = false;
+        let likedSongs = [];
+        let randomSong = false;
+        let loopSong = false;
+        let followArtist = false;
+        function getSongById(songId) {
+            var xhr = new XMLHttpRequest();
+            var url = " http://localhost:3000/api/v1/songs/" + songId;
+            xhr.open("GET", url, true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    // Success: handle the response
+                    var response = JSON.parse(xhr.responseText);
+                    temp_song = response;
+                    console.log("Song:", response);
+
+                    // You can access the comment-total-count header using getResponseHeader
+                    var commentCount = xhr.getResponseHeader(
+                        "comment-total-count"
+                    );
+                    console.log("Comment Count:", commentCount);
+                } else if (xhr.status === 500) {
+                    // Error: handle the error response
+                    var errorResponse = JSON.parse(xhr.responseText);
+                    console.error("Error:", errorResponse.message);
+                }
+            };
+            xhr.send();
+        }
+        function getAllSongs(callback) {
+            var xhr = new XMLHttpRequest();
+            var url = "http://localhost:3000/api/v1/songs/";
+            xhr.open("GET", url, true);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    // Success: handle the response
+                    var response = JSON.parse(xhr.responseText);
+                    track_list = Object.values(response);
+                    // console.log("Song:", track_list);
+                    callback(track_list);
+                } else if (xhr.status === 500) {
+                    // Error: handle the error response
+                    var errorResponse = JSON.parse(xhr.responseText);
+                    console.error("Error:", errorResponse.message);
+                }
+            };
+            xhr.send();
+        }
+        function seekTo() {
+            seekto = curr_track.duration * (seek_slider.value / 100);
+            curr_track.currentTime = seekto;
+        }
+        function resetValues() {
+            curr_time.textContent = "00:00";
+            total_duration.textContent = "00:00";
+            seek_slider.value = 0;
+        }
+        function loadTrack(track_index) {
+            try {
+                clearInterval(updateTimer);
+                resetValues();
+
+                if (!track_list || track_list.length === 0) {
+                    throw new Error("Track list is empty or not loaded");
+                }
+
+                const track = track_list[track_index];
+                if (!track) {
+                    throw new Error("Track not found at index: " + track_index);
+                }
+
+                const trackSrc = track.filePath;
+                const songNameWithoutExtension = track.title.replace(
+                    /\.mp3$/,
+                    ""
+                );
+                artist_name.textContent = track.artist.name;
+                song_name.textContent = songNameWithoutExtension;
+                artist_title.textContent = track.artist.name;
+                cover_img.src = track.coverPath;
+                cover_img_info.src = track.coverPath;
+
+                setLikeSong();
+                let nextTrackIndex =
+                    track_index === track_list.length - 1 ? 0 : track_index + 1;
+                const nextTrack = track_list[nextTrackIndex];
+
+                next_img.src = nextTrack.coverPath;
+                next_title.textContent = nextTrack.title.replace(/\.mp3$/, "");
+                artist_title_next.textContent = nextTrack.artist.name;
+
+                curr_track.src = trackSrc;
+                const lyricsPath = track.lyricsPath;
+
+                curr_track.load();
+                updateTimer = setInterval(seekUpdate, 1000);
+
+                fetchLRCFile(lyricsPath)
+                    .then(parseLyric)
+                    .then((lyrics) => {
+                        curr_track.addEventListener("timeupdate", () =>
+                            synchronizeLyrics(lyrics)
+                        );
+                    })
+                    .catch((error) => {
+                        console.error("Error processing lyrics:", error);
+                        // Optionally display an error message on the UI
+                    });
+                curr_track.addEventListener("loadedmetadata", function () {
+                    updateLikedStatus(); // Update liked status when the new track is loaded
+                });
+                curr_track.addEventListener("ended", nextTrack);
+            } catch (error) {
+                console.error("Error in loadTrack function:", error);
+                // Optionally handle the error, like showing an error message on the UI
+            }
+        }
+        function updateLikedStatus() {
+            const heartIcon = document.querySelector(".img-heart img");
+            if (likedSongs.includes(songMongoId)) {
+                heartIcon.src = "../../assets/img/heart-filled.svg";
+                likedCheck = true;
+            } else {
+                heartIcon.src = "../../assets/img/heart.svg";
+                likedCheck = false;
+            }
+        }
+        function setLikeSong() {
+            const track = track_list[track_index];
+            songMongoId = track._id;
+            let heartIcon = document.querySelector(".img-heart img");
+            for (let i = 0; i < likedSongs.length; i++) {
+                if (songMongoId === likedSongs[i]) {
+                    heartIcon.src = "../../assets/img/heart-filled.svg";
+                    likedCheck = true;
+                    break;
+                } else {
+                    document.querySelector(".img-heart img");
+                    heartIcon.src = "../../assets/img/heart.svg";
+                    likedCheck = false;
+                }
+            }
+        }
+
+        function synchronizeLyrics(lyrics) {
+            const currentTime = curr_track.currentTime;
+            for (let i = 0; i < lyrics.length; i++) {
+                if (
+                    lyrics[i].time <= currentTime &&
+                    (lyrics[i + 1] ? lyrics[i + 1].time : Infinity) >
+                        currentTime
+                ) {
+                    singing_lyric.textContent = lyrics[i].text;
+                    break;
+                }
+            }
+        }
+
+        function parseLyric(lrc) {
+            const regex = /^\[(?<time>\d{2}:\d{2}(.\d{2})?)\](?<text>.*)/;
+            const lines = lrc.split("\n");
+            const output = [];
+
+            lines.forEach((line) => {
+                const match = regex.exec(line);
+                if (match) {
+                    const time = match.groups.time;
+                    const text = match.groups.text.trim();
+                    output.push({ time: parseTime(time), text });
+                }
+            });
+
+            function parseTime(time) {
+                const [min, sec] = time.split(":");
+                return parseInt(min) * 60 + parseFloat(sec);
+            }
+
+            return output;
+        }
+
+        async function fetchLRCFile(url) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return await response.text();
+            } catch (error) {
+                console.error("Error fetching lyrics file:", error);
+                throw error; // Rethrow to be caught by the caller
+            }
+        }
+
+        function seekUpdate() {
+            let seekPosition = 0;
+
+            // Check if the current track duration is a legible number
+            if (!isNaN(curr_track.duration)) {
+                seekPosition =
+                    curr_track.currentTime * (100 / curr_track.duration);
+                seek_slider.value = seekPosition;
+
+                // Calculate the time left and the total duration
+                let currentMinutes = Math.floor(curr_track.currentTime / 60);
+                let currentSeconds = Math.floor(
+                    curr_track.currentTime - currentMinutes * 60
+                );
+                let durationMinutes = Math.floor(curr_track.duration / 60);
+                let durationSeconds = Math.floor(
+                    curr_track.duration - durationMinutes * 60
+                );
+
+                // Add a zero to the single digit time values
+                if (currentSeconds < 10) {
+                    currentSeconds = "0" + currentSeconds;
+                }
+                if (durationSeconds < 10) {
+                    durationSeconds = "0" + durationSeconds;
+                }
+                if (currentMinutes < 10) {
+                    currentMinutes = "0" + currentMinutes;
+                }
+                if (durationMinutes < 10) {
+                    durationMinutes = "0" + durationMinutes;
+                }
+
+                // Display the updated duration
+                curr_time.textContent = currentMinutes + ":" + currentSeconds;
+                total_duration.textContent =
+                    durationMinutes + ":" + durationSeconds;
+            }
+        }
+        function playpauseTrack() {
+            if (!isPlaying) playTrack();
+            else pauseTrack();
+        }
+        function playTrack() {
+            curr_track.play();
+            isPlaying = true;
+            playpause_btn.innerHTML =
+                '<img src="../../assets/img/pause-circle.svg" class="play-ic" style="width: 60.68px; height: 60.929px;"/>';
+        }
+        function pauseTrack() {
+            curr_track.pause();
+            isPlaying = false;
+            playpause_btn.innerHTML =
+                '<img src="../../assets/img/play-circle.svg" class="play-ic" style="width: 60.68px; height: 60.929px;"/>';
+        }
+        function nextTrack() {
+            // Go back to the first track if the
+            // current one is the last in the track list
+            if (track_index < track_list.length - 1) track_index += 1;
+            else track_index = 0;
+
+            // Load and play the new track
+            loadTrack(track_index);
+            playTrack();
+        }
+
+        function prevTrack() {
+            // Go back to the last track if the
+            // current one is the first in the track list
+            if (track_index > 0) track_index -= 1;
+            else track_index = track_list.length - 1;
+
+            // Load and play the new track
+            loadTrack(track_index);
+            playTrack();
+        }
+        function likeSong(userMongoId, songMongoId) {
+            // Replace with your API endpoint
+            if (!userMongoId) {
+                alert("You have to login first to like this song");
+            }
+            const apiUrl = `http://localhost:3000/api/v1/songs/like?user=${userMongoId}&song=${songMongoId}`;
+
+            // Send a POST request to like the song
+            fetch(apiUrl, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            })
+                .then((response) => {
+                    if (response.ok) {
+                        // Liked the song successfully
+                        // You can update the UI to show that the song is liked (e.g., change the heart icon color)
+                        const heartIcon =
+                            document.querySelector(".img-heart img");
+                        heartIcon.src = "../../assets/img/heart-filled.svg";
+                        likedCheck = true; // Change the heart icon to a filled heart
+                    } else {
+                        // Handle the case where liking the song failed
+                        console.error("Failed to like the song.");
+                    }
+                })
+                .catch((error) => {
+                    console.error(
+                        "An error occurred while liking the song:",
+                        error
+                    );
+                });
+            likedSongs.push(songMongoId);
+
+            // Update the liked status
+            updateLikedStatus();
+        }
+        function playRandomClick() {
+            console.log(randomSong);
+            if (randomSong == false) {
+                randomSong = true;
+                console.log(randomSong);
+                var randomElement = document.querySelector(".random-ic");
+                randomElement.src = "../../assets/img/randomed.svg";
+            } else {
+                randomSong = false;
+                console.log(randomSong);
+                var randomElement = document.querySelector(".random-ic");
+                randomElement.src = "../../assets/img/random-ic.svg";
+            }
+        }
+        function playLoopClick() {
+            console.log(loopSong);
+            if (loopSong == false) {
+                loopSong = true;
+                console.log(loopSong);
+                var loopElement = document.querySelector(".loop-ic");
+                loopElement.src = "../../assets/img/looped.svg";
+            } else {
+                loopSong = false;
+                console.log(loopSong);
+                var loopElement = document.querySelector(".loop-ic");
+                loopElement.src = "../../assets/img/loop-ic.svg";
+            }
+        }
+        function unrandomClick() {
+            randomSong = false;
+            var randomElement = document.getElementsByClassName("random-ic");
+            randomElement.src = "../../assets/img/random-ic.svg";
+        }
+
+        function playRandom() {
+            if (track_list.length > 1) {
+                let nextRandomIndex;
+                do {
+                    nextRandomIndex = Math.floor(
+                        Math.random() * track_list.length
+                    );
+                } while (nextRandomIndex === track_index); // Ensure the next track is different
+
+                track_index = nextRandomIndex;
+            } else {
+                // If there's only one track in the list, play it again
+                track_index = 0;
+            }
+
+            // Load and play the new track
+            loadTrack(track_index);
+            playTrack();
+        }
+        // Add an event listener to the heart icon to call the likeSong function
+        const heartIcon = document.querySelector(".img-heart img");
+        heartIcon.addEventListener("click", () => {
+            if (likedCheck == false) {
+                likeSong(userMongoId, songMongoId);
+            } else {
+                unlikeSong(userMongoId, songMongoId);
+            }
+        });
+        const followElement = document.querySelector(".song-info .follow");
+        followElement.addEventListener("click", () => {
+            if (followArtist==false){
+                followArtist = true;
+                followElement.classList.add("active");
+            } else {
+                followArtist = false;
+                followElement.classList.remove("active");
+            }
+        })
+        function unlikeSong(userMongoId, songMongoId) {
+            if (!userMongoId) {
+                alert("You have to login first to unlike this song");
+            }
+            const apiUrl = `http://localhost:3000/api/v1/songs/unlike?user=${userMongoId}&song=${songMongoId}`;
+            fetch(apiUrl, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            })
+                .then((response) => {
+                    if (response.ok) {
+                        const heartIcon =
+                            document.querySelector(".img-heart img");
+                        heartIcon.src = "../../assets/img/heart.svg";
+                        likedCheck = false;
+                    } else {
+                        console.error("Failed to unlike song.");
+                    }
+                })
+                .catch((error) => {
+                    console.error(
+                        "An error occurred while unliking the song:",
+                        error
+                    );
+                });
+            const index = likedSongs.indexOf(songMongoId);
+            if (index !== -1) {
+                likedSongs.splice(index, 1);
+            }
+
+            // Update the liked status
+            updateLikedStatus();
+        }
+        function logoutUser() {
+            // Remove user data from localStorage
+            localStorage.removeItem("userMongoId");
+            // Redirect to the login page or any other desired page
+            window.location.href = "../../index.html"; // Replace with the actual URL
+        }
+        function getUser() {
+            if (userMongoId) {
+                // Make a GET request to the getUserById API
+                fetch(`http://localhost:3000/api/v1/users/${userMongoId}`)
+                    .then((response) => {
+                        if (response.ok) {
+                            return response.json();
+                        } else {
+                            throw new Error(
+                                `HTTP error! Status: ${response.status}`
+                            );
+                        }
+                    })
+                    .then((data) => {
+                        // Handle the API response here (e.g., display user data)
+                        console.log(data);
+                        userName = data.name;
+                        avata_src = data.avatarPath;
+                        const userNamePlaceholder =
+                            document.querySelector(".action");
+
+                        if (userNamePlaceholder) {
+                            userNamePlaceholder.innerHTML = "";
+                            userNamePlaceholder.innerHTML += `<img src="${avata_src}" class="avatar-img"/><a href="../Profile/profile.html" style="text-decoration: none; color: white;" class="action-link">${userName}</a><a href="#" id="logoutlink" class="action-link" onclick="logoutUser()">log out</a>`;
+                        }
+                        const likedSongsPlaylist = data.playlists.find(
+                            (playlist) => playlist.title === "Liked Songs"
+                        );
+                        likedSongs = likedSongsPlaylist
+                            ? likedSongsPlaylist.songs
+                            : [];
+                        setLikeSong();
+                        console.log(likedSongs);
+                        // Update the page with user data, such as name, total counts, etc.
+                        // You can update placeholders or elements with this data
+                    })
+                    .catch((error) => {
+                        // Handle any errors that occur during the API request
+                        console.error(error);
+                    });
+            } else {
+                // Handle the case where userMongoId is not available in local storage
+                console.error("MongoDB _id not found in local storage.");
+            }
+        }
+        const userMongoId = localStorage.getItem("userMongoId");
+
+        if (userMongoId) {
+            getUser();
+        }
+        getAllSongs(function (tracks) {
+            // Callback function to handle the track_list
+            loadTrack(track_index);
+        });
+    </script>
+</html>

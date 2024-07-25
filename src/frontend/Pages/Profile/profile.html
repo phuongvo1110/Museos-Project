@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MUSEOS</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="../../assets/fonts/stylesheet.css" />
+        <link rel="stylesheet" href="../../assets/css/reset.css" />
+    </head>
+    <body>
+        <main style="height: 1050px">
+            <header class="header">
+                <div class="content">
+                    <div class="navbar">
+                        <div class="logo">
+                            <img src="../../assets/img/logo.svg" alt="" />
+                            <img src="../../assets/img/museos.svg" alt="" />
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#!">
+                                    <div class="noti-wrapper">
+                                        <img
+                                            src="../../assets/img/noti.svg"
+                                            alt=""
+                                        />
+                                        <div class="noti-num">1</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../index.html">home</a>
+                            </li>
+                            <li>
+                                <a href="../Details/details.html">library</a>
+                            </li>
+                            <li>
+                                <a href="#!">upload</a>
+                            </li>
+                            <li>
+                                <a href="#!">settings</a>
+                            </li>
+                            <li>
+                                <input
+                                    type="text"
+                                    class="search-input"
+                                    placeholder="songs, genres, artists and more..."
+                                />
+                            </li>
+                        </ul>
+
+                        <div class="action">
+                            <a href="../Sign In/signin.html" class="action-link"
+                                >login</a
+                            >
+                            <a href="../Sign Up/signup.html" class="action-link"
+                                >sign up</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="song-wrapper">
+                <div class="song-cta">
+                    <img src="" alt="" class="avatar-cover" />
+                    <div class="title">
+                        <div class="username-title" style="width: 100%"></div>
+                        <a href="#" class="list-cta" onclick="openForm()">
+                            <img src="../../assets/img/detail_profile.svg" />
+                        </a>
+                        <div class="form-popup" id="myForm">
+                            <div class="btn-area">
+                                <button
+                                    type="button"
+                                    class="cancel"
+                                    onclick="closeForm()"
+                                >
+                                    X
+                                </button>
+                            </div>
+                            <form>
+                                <div class="row">
+                                    <div>
+                                        <label for="photo"></label>
+                                        <input
+                                            type="file"
+                                            id="photo"
+                                            name="photo"
+                                            accept="image/*"
+                                            onchange="updateAvatar(this)"
+                                        />
+                                        <img
+                                            src=""
+                                            alt=""
+                                            class="change_avatar"
+                                            onclick="document.getElementById('photo').click();"
+                                            style="cursor: pointer"
+                                        />
+                                    </div>
+                                    <div class="info">
+                                        <label for="email"><b>Email</b></label>
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                        />
+                                        <label for="name"
+                                            ><b>Username</b></label
+                                        >
+                                        <input
+                                            type="name"
+                                            name="name"
+                                            id="name"
+                                        />
+                                        <label for="birthday"
+                                            >Date of birth</label
+                                        >
+                                        <input
+                                            type="date"
+                                            id="birthday"
+                                            pattern="\d{4}-\d{2}-\d{2}"
+                                            name="birthday"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="submit-area">
+                                    <button type="submit">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="information"></div>
+                </div>
+                <div class="song-desc">
+                    <div class="lyric-wrapper">
+                        <div class="upload-section">
+                            <div class="upload-title">
+                                <span>uploaded songs</span>
+                                <div class="more-action">
+                                    <a href="#" onclick="viewMore()"
+                                        >view more</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="upload-area">
+                                upload your beautiful melody
+                                <a href="#">here</a>
+                            </div>
+                        </div>
+                        <div class="fav-song">
+                            <div class="song-title">
+                                <span>favorite songs</span>
+                                <div class="more-action">
+                                    <a href="#">view more</a>
+                                </div>
+                            </div>
+                            <ul class="list-song">
+                            </ul>
+                        </div>
+                        <div class="fav-artist">
+                            <span class="fav-title">favorite artists</span>
+                            <div class="list-artist">
+                                <div class="artist-area">
+                                    <img
+                                        src="../../assets/img/artist.png"
+                                        alt="Artist image"
+                                        class="artist-img"
+                                    />
+                                    <span class="artist-name">MANBO</span>
+                                </div>
+                                <div class="artist-area">
+                                    <img
+                                        src="../../assets/img/artist.png"
+                                        alt="Artist image"
+                                        class="artist-img"
+                                    />
+                                    <span class="artist-name">HURRYKNG</span>
+                                </div>
+                                <div class="artist-area">
+                                    <img
+                                        src="../../assets/img/artist.png"
+                                        alt="Artist image"
+                                        class="artist-img"
+                                    />
+                                    <span class="artist-name">Negav</span>
+                                </div>
+                                <div class="artist-area">
+                                    <img
+                                        src="../../assets/img/artist.png"
+                                        alt="Artist image"
+                                        class="artist-img"
+                                    />
+                                    <span class="artist-name">B Ray</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="content">
+                    <div class="left-footer">
+                        <div class="logo">
+                            <img
+                                src="../../assets/img/footer-icon.svg"
+                                alt=""
+                            />
+                            <div class="logo-text">museos</div>
+                        </div>
+                        <div class="copyright">
+                            Copyright © 2023 Faculty of Information Technology
+                            VNU-HCMUS. All rights reserved.
+                        </div>
+                    </div>
+                    <div class="right-footer">
+                        <a href="#!" class="terms-condition"
+                            >terms and conditions</a
+                        >
+                        <a href="#!" class="faq">FAQ</a>
+                        <a href="#!" class="contacts">contacts</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script>
+            let avata_src = "";
+            let date_string = "";
+            let avatar_file = false;
+            let favList = [];
+            const form = document.querySelector("form");
+            form.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                const email = document.querySelector("#email").value;
+                const name = document.querySelector("#name").value;
+                const dob = document.querySelector("#birthday").value;
+                const requestBody = {
+                    email: email,
+                    name: name,
+                    DOB: dob,
+                };
+                if (avatar_file) requestBody.newAvatar = true;
+                try {
+                    const res = await fetch(
+                        `http://localhost:3000/api/v1/users/${userMongoId}`,
+                        {
+                            method: "PATCH",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify(requestBody),
+                        }
+                    );
+                    const data = await res.json();
+                    if (res.status === 200) {
+                        if (avatar_file) {
+                            let res = await fetch(data.avatarUpLink, {
+                                method: "PUT",
+                                body: avatar_file,
+                            });
+                            if (res.status === 200) {
+                                console.log(
+                                    `Successfully uploaded to ${data.avatarUpLink}`
+                                );
+                                location.reload();
+                            } else console.log(`Failed to upload avatar`);
+                        }
+                        console.log("Updated User:", data.updatedUser);
+                        location.reload();
+                    } else {
+                        console.error("Failed to update");
+                    }
+                    avatar_file = false;
+                } catch (error) {
+                    avatar_file = false;
+                    console.error("An error occurred:", error);
+                }
+            });
+            function openForm() {
+                document.getElementById("myForm").style.display = "flex";
+            }
+            function viewMore() {
+                const rightSection = document.querySelector(".lyric-wrapper");
+                rightSection.innerHTML =
+                    '<div class="back-section"><a href="#" onclick="backSection()"><img src="../../assets/img/back-action.svg" alt="" class="back-action"/></a></div><div class="upload-opener"><input type="text" id="songname" class="song-input" placeholder="enter song’s name"/><div class="drag-action"> drag or click <a href="#">here</a> to upload song’s cover</div> <div class="drag-action">drag or click <a href="#">here</a> to add file </div></div><button class="upload-action"><img src="../../assets/img/up-arrow.svg"><span>Upload</span></button>';
+            }
+            function backSection() {
+                const rightSection = document.querySelector(".lyric-wrapper");
+                rightSection.innerHTML =
+                    '<div class="upload-section"><div class="upload-title"><span>uploaded songs</span><div class="more-action"><a href="#" onclick="viewMore()">view more</a></div></div><div class="upload-area">upload your beautiful melody<a href="#">here</a></div></div><div class="fav-song"><div class="song-title"><span>favorite songs</span><div class="more-action"><a href="#">view more</a></div></div><ul class="list-song"><li class="playlist"> <img src="../../assets/img/avatar.png" alt="" class="song-img"><div class="playlist-info">Playlist 1</div></li> <li class="song"> <div class="info-section"> <img src="../../assets/img/avatar.png" alt="" class="song-img"> <div class="song-info"> <span class="song-name">Exit Sign</span> <span class="song-writer">HIEUTHUHAI, marzuz</span> </div> </div> <span class="viewers">554,012</span> <span class="time-section">3:21</span> </li> <li class="song"> <div class="info-section"> <img src="../../assets/img/avatar.png" alt="" class="song-img"> <div class="song-info"> <span class="song-name">Không thể say</span> <span class="song-writer">HIEUTHUHAI</span> </div></div><span class="viewers">564,675</span> <span class="time-section">2:50</span> </li>  </ul> </div> <div class="fav-artist"><span class="fav-title">favorite artists</span> <div class="list-artist"> <div class="artist-area">  <img src="../../assets/img/artist.png" alt="Artist image" class="artist-img"> <span class="artist-name">MANBO</span> </div> <div class="artist-area"> <img src="../../assets/img/artist.png" alt="Artist image" class="artist-img"> <span class="artist-name">HURRYKNG</span> </div> <div class="artist-area"> <img src="../../assets/img/artist.png" alt="Artist image" class="artist-img"> <span class="artist-name">Negav</span> </div> <div class="artist-area"> <img src="../../assets/img/artist.png" alt="Artist image" class="artist-img"> <span class="artist-name">B Ray</span> </div> </div> </div>';
+            }
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }
+            function updateAvatar(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        document
+                            .querySelector(".change_avatar")
+                            .setAttribute("src", e.target.result);
+                        console.log(document.querySelector("#photo").value);
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                    avatar_file = input.files[0];
+                }
+            }
+            function logoutUser() {
+                // Remove user data from localStorage
+                localStorage.removeItem("userMongoId");
+                // Redirect to the login page or any other desired page
+                window.location.href = "../../index.html"; // Replace with the actual URL
+            }
+            function convertSecondsToMinSec(seconds) {
+                var minutes = Math.floor(seconds / 60); // Calculate the minutes
+                var remainingSeconds = seconds % 60; // Calculate the remaining seconds
+
+                return minutes + ":" + remainingSeconds;
+            }
+            function getSongById(songId) {
+                if (songId) {
+                    fetch(`http://localhost:3000/api/v1/songs/${songId}`)
+                        .then((response) => {
+                            if (response.ok) {
+                                return response.json();
+                            } else {
+                                throw new Error(
+                                    `HTTP error! Status: ${response.status}`
+                                );
+                            }
+                        })
+                        .then((data) => {
+                            console.log(data);
+                            const imgSong = document.createElement("img");
+                            imgSong.src = data.coverPath;
+                            imgSong.className = "song-img";
+                            const song_info = document.createElement("div");
+                            song_info.className = "song-info";
+                            const info_section = document.createElement("div");
+                            info_section.className = "info-section";
+                            const songName = document.createElement("span");
+                            songName.textContent = data.title.replace(
+                                /\.mp3$/,
+                                ""
+                            );
+                            songName.className = "song-name";
+                            const songWriter = document.createElement("span");
+                            songWriter.textContent = data.artist.name;
+                            songWriter.className = "song-writer";
+                            info_section.appendChild(imgSong);
+                            song_info.appendChild(songName);
+                            song_info.appendChild(songWriter);
+                            info_section.appendChild(song_info);
+                            const viewers = document.createElement("span");
+                            viewers.textContent = data.heartCnt;
+                            viewers.className = "viewers";
+                            const time = document.createElement("span");
+                            time.textContent = convertSecondsToMinSec(
+                                data.length
+                            );
+                            time.className = "time-section";
+                            const li = document.createElement("li");
+                            li.className = "song";
+                            li.appendChild(info_section);
+                            li.appendChild(viewers);
+                            li.appendChild(time);
+                            const ul = document.querySelector(".list-song");
+                            ul.appendChild(li);
+                            console.log(li);
+                        });
+                }
+            }
+            function getUser() {
+                if (userMongoId) {
+                    // Make a GET request to the getUserById API
+                    fetch(`http://localhost:3000/api/v1/users/${userMongoId}`)
+                        .then((response) => {
+                            if (response.ok) {
+                                return response.json();
+                            } else {
+                                throw new Error(
+                                    `HTTP error! Status: ${response.status}`
+                                );
+                            }
+                        })
+                        .then((data) => {
+                            // Handle the API response here (e.g., display user data)
+                            console.log(data);
+                            userName = data.name;
+                            avatar_src = data.avatarPath;
+                            date_string = data.DOB;
+                            const userNamePlaceholder =
+                                document.querySelector(".action");
+                            console.log(userName);
+                            const avatar_img =
+                                document.querySelector(".avatar-cover");
+                            const username =
+                                document.querySelector(".username-title");
+                            const avatar_changing =
+                                document.querySelector(".change_avatar");
+                            avatar_img.src = avatar_src;
+                            avatar_changing.src = avatar_src;
+                            console.log(date_string);
+                            const date = new Date(date_string);
+                            const year = date.getFullYear();
+                            const month = (date.getMonth() + 1)
+                                .toString()
+                                .padStart(2, "0");
+                            const day = date
+                                .getDate()
+                                .toString()
+                                .padStart(2, "0");
+                            const formattedDate = `${year}-${month}-${day}`;
+                            console.log(formattedDate);
+                            document.getElementById("birthday").value =
+                                formattedDate;
+                            document.getElementById("email").value = data.email;
+                            document.getElementById("name").value = data.name;
+                            if (userNamePlaceholder) {
+                                userNamePlaceholder.innerHTML = "";
+                                userNamePlaceholder.innerHTML += `<img src="${avatar_src}" class="avatar-img"/><span>${userName}</span><a href="#" id="logoutlink" class="action-link" onclick="logoutUser()">log out</a>`;
+                                username.textContent = data.name;
+                            }
+                            let tempList = data.playlists.find(
+                                (playlist) => playlist.title === "Liked Songs"
+                            );
+                            favList = tempList.songs;
+                            // Update the page with user data, such as name, total counts, etc.
+                            // You can update placeholders or elements with this data
+                            if (favList.length > 0) {
+                                console.log(favList);
+                                for (let i = 0; i < favList.length; i++) {
+                                    getSongById(favList[i]);
+                                }
+                            }
+                        })
+                        .catch((error) => {
+                            // Handle any errors that occur during the API request
+                            console.error(error);
+                        });
+                } else {
+                    // Handle the case where userMongoId is not available in local storage
+                    console.error("MongoDB _id not found in local storage.");
+                }
+            }
+
+            const userMongoId = localStorage.getItem("userMongoId");
+            if (userMongoId) {
+                getUser();
+            }
+        </script>
+    </body>
+</html>
